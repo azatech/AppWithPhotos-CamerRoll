@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		FC02B3B11F3CF851007829EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC02B3B01F3CF851007829EB /* AppDelegate.swift */; };
-		FC02B3B31F3CF851007829EB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC02B3B21F3CF851007829EB /* ViewController.swift */; };
+		FC02B3B31F3CF851007829EB /* PhotoPickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC02B3B21F3CF851007829EB /* PhotoPickerVC.swift */; };
 		FC02B3B61F3CF851007829EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC02B3B41F3CF851007829EB /* Main.storyboard */; };
 		FC02B3B81F3CF851007829EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC02B3B71F3CF851007829EB /* Assets.xcassets */; };
 		FC02B3BB1F3CF851007829EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC02B3B91F3CF851007829EB /* LaunchScreen.storyboard */; };
 		FC02B3C61F3CF851007829EB /* testTaskAMGradeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC02B3C51F3CF851007829EB /* testTaskAMGradeTests.swift */; };
+		FC02B3D11F3CF960007829EB /* CustomSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC02B3D01F3CF960007829EB /* CustomSegue.swift */; };
+		FC02B3D31F3CFD2D007829EB /* BrowserVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC02B3D21F3CFD2D007829EB /* BrowserVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +30,7 @@
 /* Begin PBXFileReference section */
 		FC02B3AD1F3CF851007829EB /* testTaskAMGrade.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testTaskAMGrade.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC02B3B01F3CF851007829EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FC02B3B21F3CF851007829EB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FC02B3B21F3CF851007829EB /* PhotoPickerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPickerVC.swift; sourceTree = "<group>"; };
 		FC02B3B51F3CF851007829EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FC02B3B71F3CF851007829EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC02B3BA1F3CF851007829EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +38,8 @@
 		FC02B3C11F3CF851007829EB /* testTaskAMGradeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testTaskAMGradeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC02B3C51F3CF851007829EB /* testTaskAMGradeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testTaskAMGradeTests.swift; sourceTree = "<group>"; };
 		FC02B3C71F3CF851007829EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC02B3D01F3CF960007829EB /* CustomSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSegue.swift; sourceTree = "<group>"; };
+		FC02B3D21F3CFD2D007829EB /* BrowserVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowserVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +82,10 @@
 			isa = PBXGroup;
 			children = (
 				FC02B3B01F3CF851007829EB /* AppDelegate.swift */,
-				FC02B3B21F3CF851007829EB /* ViewController.swift */,
+				FC02B3B21F3CF851007829EB /* PhotoPickerVC.swift */,
+				FC02B3D21F3CFD2D007829EB /* BrowserVC.swift */,
 				FC02B3B41F3CF851007829EB /* Main.storyboard */,
+				FC02B3D41F3CFDAA007829EB /* Segue */,
 				FC02B3B71F3CF851007829EB /* Assets.xcassets */,
 				FC02B3B91F3CF851007829EB /* LaunchScreen.storyboard */,
 				FC02B3BC1F3CF851007829EB /* Info.plist */,
@@ -94,6 +100,14 @@
 				FC02B3C71F3CF851007829EB /* Info.plist */,
 			);
 			path = testTaskAMGradeTests;
+			sourceTree = "<group>";
+		};
+		FC02B3D41F3CFDAA007829EB /* Segue */ = {
+			isa = PBXGroup;
+			children = (
+				FC02B3D01F3CF960007829EB /* CustomSegue.swift */,
+			);
+			name = Segue;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,7 +160,7 @@
 				TargetAttributes = {
 					FC02B3AC1F3CF850007829EB = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = L8KP66Y8C7;
+						DevelopmentTeam = 46F3JWDNJW;
 						ProvisioningStyle = Automatic;
 					};
 					FC02B3C01F3CF851007829EB = {
@@ -201,8 +215,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC02B3B31F3CF851007829EB /* ViewController.swift in Sources */,
+				FC02B3B31F3CF851007829EB /* PhotoPickerVC.swift in Sources */,
+				FC02B3D11F3CF960007829EB /* CustomSegue.swift in Sources */,
 				FC02B3B11F3CF851007829EB /* AppDelegate.swift in Sources */,
+				FC02B3D31F3CFD2D007829EB /* BrowserVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,11 +357,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = L8KP66Y8C7;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 46F3JWDNJW;
 				INFOPLIST_FILE = testTaskAMGrade/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = swift3.testTaskAMGrade;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -354,11 +372,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = L8KP66Y8C7;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 46F3JWDNJW;
 				INFOPLIST_FILE = testTaskAMGrade/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = swift3.testTaskAMGrade;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -412,6 +432,7 @@
 				FC02B3CC1F3CF851007829EB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FC02B3CD1F3CF851007829EB /* Build configuration list for PBXNativeTarget "testTaskAMGradeTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +441,7 @@
 				FC02B3CF1F3CF851007829EB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
